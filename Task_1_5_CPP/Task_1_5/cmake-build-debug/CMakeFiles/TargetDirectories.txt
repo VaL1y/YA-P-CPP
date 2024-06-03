@@ -1,0 +1,3 @@
+C:/Users/Валерий/Desktop/CPP/Task_1_5_CPP/Task_1_5/cmake-build-debug/CMakeFiles/Task_1_5.dir
+C:/Users/Валерий/Desktop/CPP/Task_1_5_CPP/Task_1_5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Валерий/Desktop/CPP/Task_1_5_CPP/Task_1_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
