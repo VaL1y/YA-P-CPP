@@ -1,0 +1,3 @@
+C:/Users/Валерий/Desktop/CPP/Task_3_5_CPP/Task3/cmake-build-debug/CMakeFiles/Task_3_5_CPP.dir
+C:/Users/Валерий/Desktop/CPP/Task_3_5_CPP/Task3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Валерий/Desktop/CPP/Task_3_5_CPP/Task3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
