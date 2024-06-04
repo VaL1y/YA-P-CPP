@@ -11,7 +11,7 @@ void Dictionary::addWord(const std::string& word) {
 void Dictionary::addWordsFromFile(const std::string& filename) {
     std::ifstream file(filename);
     if (!file) {
-        std::cerr << "Ошибка открытия файла: " << filename << std::endl;
+        std::cerr << "fail to load: " << filename << std::endl;
         return;
     }
 
@@ -22,10 +22,14 @@ void Dictionary::addWordsFromFile(const std::string& filename) {
     file.close();
 }
 
+void Dictionary::clear() {
+    word_count.clear();
+}
+
 void Dictionary::saveToFile(const std::string& filename) {
     std::ofstream file(filename);
     if (!file) {
-        std::cerr << "Ошибка открытия файла для записи: " << filename << std::endl;
+        std::cerr << "fail to open to save: " << filename << std::endl;
         return;
     }
 
@@ -38,7 +42,7 @@ void Dictionary::saveToFile(const std::string& filename) {
 void Dictionary::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
     if (!file) {
-        std::cerr << "Ошибка открытия файла: " << filename << std::endl;
+        std::cerr << "fail to open: " << filename << std::endl;
         return;
     }
 

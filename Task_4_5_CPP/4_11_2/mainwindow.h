@@ -21,6 +21,8 @@ public:
 
 private slots:
     void on_loadButton_clicked();
+    void on_clearButton_clicked();
+    void on_addLoadButton_clicked();
     void on_saveButton_clicked();
     void on_addButton_clicked();
     void on_sortAlphaButton_clicked();

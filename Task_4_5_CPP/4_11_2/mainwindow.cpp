@@ -18,6 +18,14 @@ MainWindow::~MainWindow() {
 void MainWindow::on_loadButton_clicked() {
     QString filename = QFileDialog::getOpenFileName(this, tr("Открыть файл"), "", tr("Text Files (*.txt)"));
     if (!filename.isEmpty()) {
+        dictionary.loadFromFile(filename.toStdString());
+        updateDisplay(dictionary.getWordsAlphabetically());
+    }
+}
+
+void MainWindow::on_addLoadButton_clicked() {
+    QString filename = QFileDialog::getOpenFileName(this, tr("Открыть файл"), "", tr("Text Files (*.txt)"));
+    if (!filename.isEmpty()) {
         dictionary.addWordsFromFile(filename.toStdString());
         updateDisplay(dictionary.getWordsAlphabetically());
     }
@@ -36,6 +44,11 @@ void MainWindow::on_addButton_clicked() {
         dictionary.addWord(word.toStdString());
         updateDisplay(dictionary.getWordsAlphabetically());
     }
+}
+
+void MainWindow::on_clearButton_clicked() {
+    dictionary.clear();
+    updateDisplay(dictionary.getWordsAlphabetically());
 }
 
 void MainWindow::on_sortAlphaButton_clicked() {
